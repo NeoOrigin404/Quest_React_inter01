@@ -1,18 +1,18 @@
 import EmployeeCard from "./components/EmployeeCard";
 import { useState } from "react";
 
-const sampleEmployee = {
-  name: {
-    first: "Charlie",
-    last: "Thompson",
-  },
-  email: "charlie.thompson@example.com",
-  picture: {
-    medium: "https://randomuser.me/api/portraits/med/men/40.jpg",
-  },
-};
-
 export default function App() {
+  const sampleEmployee = {
+    name: {
+      first: "Charlie",
+      last: "Thompson",
+    },
+    email: "charlie.thompson@example.com",
+    picture: {
+      medium: "https://randomuser.me/api/portraits/med/men/40.jpg",
+    },
+  };
+
   const [employee, setEmployee] = useState(sampleEmployee);
 
   const getEmployee = () => {
